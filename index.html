@@ -4,8 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Sign up here</h1>
+    <p>Fill out the form with required information</p>
+    <section>
+        <form action="https://register-demo.freecodecamp.org" method="post">
+            <fieldset class="personal_details">
+                <label for="firstname">Enter your first name:<input id="firstname" type="text" placeholder="First Name" required></label>
+                <label for="lastname">Enter your last name:<input id="lastname" type="text" placeholder="Last Name" required></label>
+                <label for="email">Enter your email:<input id="email" type="email" placeholder="Email" required></label>
+                <label for="password">Enter your password:<input id="passowrd" type="password" placeholder="Password" required></label>
+            </fieldset>
+            <fieldset>
+                <label for="T&Cs"><input id="T&Cs" type="checkbox" required>
+                    Accept <a href="www.google.com">Terms & Condition</a>
+                    </label>
+                <label for="picture">Upload profile picture<input id="picture" type="file"></label>
+                <label>How did you hear about us?</label>
+                <select>
+                    <option value="">Please select</option>
+                    <option value="1">Facebook</option>
+                    <option value="2">Twitter</option>
+                    <option value="3">Instagram</option>
+                    <option value="4">Other</option>
+                </select>
+                <label>Why would you like to join?<textarea placeholder="Fill in"></textarea></label>
+            </fieldset>
+            <fieldset>
+                <label for="submit"><input id="submit" type="submit"></label>
+            </fieldset>
+            
+        </form>
+    </section>
 </body>
 </html>
